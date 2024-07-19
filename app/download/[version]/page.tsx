@@ -44,7 +44,7 @@ export default function VersionDetail({
 
   useEffect(() => {
     async function fetchData() {
-      const res = await fetch("http://localhost:3000/bolohi2.json");
+      const res = await fetch("/bolohi2.json");
       const data: AppData = await res.json();
       const versionData = data.versions.find(
         (v) => v.version === params.version,
