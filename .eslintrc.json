@@ -9,5 +9,9 @@
       "callees": ["twMerge", "createTheme"],
       "classRegex": "^(class(Name)|theme)?$"
     }
+  },
+  "rules": {
+    "tailwindcss/no-custom-classname": "off",
+    "react/no-unescaped-entities": "off"
   }
 }
