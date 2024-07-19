@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+Carousel {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  /* display: none; */
+}

@@ -1,0 +1,90 @@
+{
+  "app_name": "BoloHi",
+  "platform": "Android",
+  "developer": "BoloHi Team",
+  "versions": [
+    {
+      "version": "5.24.1",
+      "license": "Free",
+      "language": "English",
+      "last_update": "May 27, 2024",
+      "os_required": "Android 13.0",
+      "downloads": "9K",
+      "last_month_downloads": "456",
+      "rating": {
+        "average": 4.1,
+        "votes": 19
+      },
+      "security_status": "Clean",
+      "description": {
+        "headline": "Free-to-use social app",
+        "details": "BoloHi is a highly interactive and fun social and communication app developed by BoloHi Team. It offers a variety of enjoyable activities and the opportunity to meet new people from all over the world in a 3D virtual space. Users can join group chats or live video streams hosted by others, or host their own streaming party.",
+        "features": [
+          "User-friendly interface",
+          "Join or host live video and audio streams",
+          "Social games like Werewolf, Ludo, Draw and Guess, Bingo",
+          "Custom avatar creation",
+          "Virtual gift packages",
+          "Official channels with live karaoke rooms and storytelling rooms"
+        ],
+        "downsides": ["Encountering creeps is possible"]
+      },
+      "pros": [
+        "User-friendly interface",
+        "Different activities like games and karaoke"
+      ],
+      "cons": ["Encountering creeps is possible"],
+      "download_link": "https://bolohi.en.softonic.com/android/download",
+      "icon_url": "https://images.sftcdn.net/images/t_app-icon-s/p/f2df6713-23f4-406c-a70d-5098194e0b13/2889027038/bolohi-logo",
+      "screenshots": [
+        "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/3969859478/bolohi-screenshot.png",
+        "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/3317260281/bolohi-screenshot.png",
+        "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/4161052841/bolohi-screenshot.png",
+        "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/1666747496/bolohi-screenshot.png",
+        "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/2054692636/bolohi-screenshot.png",
+        "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/26152502/bolohi-screenshot.png",
+        "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/3776560623/bolohi-screenshot.png"
+      ]
+    },
+    {
+      "version": "5.23.0",
+      "license": "Free",
+      "language": "English",
+      "last_update": "April 15, 2024",
+      "os_required": "Android 12.0",
+      "downloads": "8K",
+      "last_month_downloads": "400",
+      "rating": {
+        "average": 4.0,
+        "votes": 18
+      },
+      "security_status": "Clean",
+      "description": {
+        "headline": "Interactive social app",
+        "details": "BoloHi is an interactive social and communication app offering various activities and opportunities to meet new people globally in a 3D virtual space. Users can join or host group chats and live video streams.",
+        "features": [
+          "User-friendly interface",
+          "Join or host live video and audio streams",
+          "Social games",
+          "Custom avatar creation",
+          "Virtual gift packages",
+          "Official channels with live karaoke rooms and storytelling rooms"
+        ],
+        "downsides": ["Encountering inappropriate content"]
+      },
+      "pros": ["User-friendly interface", "Multiple activities available"],
+      "cons": ["Possible exposure to inappropriate content"],
+      "download_link": "https://bolohi.en.softonic.com/android/download",
+      "icon_url": "https://images.sftcdn.net/images/t_app-icon-s/p/f2df6713-23f4-406c-a70d-5098194e0b13/2889027038/bolohi-logo",
+      "screenshots": [
+        "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/3969859478/bolohi-screenshot.png",
+        "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/3317260281/bolohi-screenshot.png",
+        "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/4161052841/bolohi-screenshot.png",
+        "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/1666747496/bolohi-screenshot.png",
+        "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/2054692636/bolohi-screenshot.png",
+        "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/26152502/bolohi-screenshot.png",
+        "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/3776560623/bolohi-screenshot.png"
+      ]
+    }
+  ]
+}

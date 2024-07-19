@@ -1,0 +1,425 @@
+{
+  "app_name": "BoloHi",
+  "platform": "Android",
+  "developer": "BoloHi Team",
+  "common_details": {
+    "icon_url": "https://images.sftcdn.net/images/t_app-icon-s/p/f2df6713-23f4-406c-a70d-5098194e0b13/2889027038/bolohi-logo",
+    "description": "BoloHi is a highly interactive and fun social and communication app developed by BoloHi Team. It offers a variety of enjoyable activities and the opportunity to meet new people from all over the world in a 3D virtual space. Users can join group chats or live video streams hosted by others, or host their own streaming party.",
+    "features": [
+      "User-friendly interface",
+      "Join or host live video and audio streams",
+      "Social games like Werewolf, Ludo, Draw and Guess, Bingo",
+      "Custom avatar creation",
+      "Virtual gift packages",
+      "Official channels with live karaoke rooms and storytelling rooms"
+    ],
+    "pros": [
+      "User-friendly interface",
+      "Different activities like games and karaoke"
+    ],
+    "cons": ["Encountering creeps is possible"],
+    "screenshots": [
+      "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/3969859478/bolohi-screenshot.png",
+      "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/3317260281/bolohi-screenshot.png",
+      "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/4161052841/bolohi-screenshot.png",
+      "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/1666747496/bolohi-screenshot.png",
+      "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/2054692636/bolohi-screenshot.png",
+      "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/26152502/bolohi-screenshot.png",
+      "https://images.sftcdn.net/images/t_app-cover-l,f_auto/p/f2df6713-23f4-406c-a70d-5098194e0b13/3776560623/bolohi-screenshot.png"
+    ]
+  },
+  "versions": [
+    {
+      "version": "5.24.1",
+      "release_date": "May 16, 2024",
+      "size": "165.31 MB",
+      "architecture": ["arm64-v8a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "4458f770581cff7f1d9a2ae1381f141e125353d7",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=4458f770581cff7f1d9a2ae1381f141e125353d7",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.24.0",
+      "release_date": "April 17, 2024",
+      "size": "178.17 MB",
+      "architecture": ["arm64-v8a", "armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "69dcd2c2414303f30e6de849af584ad09d7f6ad3",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=69dcd2c2414303f30e6de849af584ad09d7f6ad3",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.21.0",
+      "release_date": "December 22, 2023",
+      "size": "167.45 MB",
+      "architecture": ["arm64-v8a", "armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "578ed3d007431562becd4f02036b5759f8085f2e",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=578ed3d007431562becd4f02036b5759f8085f2e",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.21.0",
+      "release_date": "December 5, 2023",
+      "size": "213.87 MB",
+      "architecture": ["arm64-v8a", "armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "1a6fd49c5de5d14e8adacf5aeaf1075be1e25cbd",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=1a6fd49c5de5d14e8adacf5aeaf1075be1e25cbd",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.20.0",
+      "release_date": "November 9, 2023",
+      "size": "168.02 MB",
+      "architecture": ["arm64-v8a", "armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "2ec651b123f79d386b38358bac9e542bec087e85",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=2ec651b123f79d386b38358bac9e542bec087e85",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.20.0",
+      "release_date": "December 4, 2023",
+      "size": "183.33 MB",
+      "architecture": ["arm64-v8a", "armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "5b2c11bf5145c9e646d93a4cf11eaf3fef86bddf",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=5b2c11bf5145c9e646d93a4cf11eaf3fef86bddf",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.18.0",
+      "release_date": "October 15, 2023",
+      "size": "167.34 MB",
+      "architecture": ["arm64-v8a", "armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "164d2b3735949a3cba1ba4103f35873b596109ba",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=164d2b3735949a3cba1ba4103f35873b596109ba",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.18.0",
+      "release_date": "October 15, 2023",
+      "size": "213.73 MB",
+      "architecture": ["arm64-v8a", "armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "49b4ce3e9fb38f8fdd9199b00c26769f3b75b05e",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=49b4ce3e9fb38f8fdd9199b00c26769f3b75b05e",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.16.1",
+      "release_date": "October 7, 2023",
+      "size": "172.58 MB",
+      "architecture": ["arm64-v8a", "armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "439c715222b36c5994227c9183a46c75aaedd2da",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=439c715222b36c5994227c9183a46c75aaedd2da",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.16.1",
+      "release_date": "September 21, 2023",
+      "size": "187.87 MB",
+      "architecture": ["arm64-v8a", "armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "abb39313490a650a46fb32b5ad1ecf6f55380696",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=abb39313490a650a46fb32b5ad1ecf6f55380696",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.16.0",
+      "release_date": "August 25, 2023",
+      "size": "172.58 MB",
+      "architecture": ["arm64-v8a", "armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "5be1c2e8f50c55f13a8d2513aa3846e38d883d7f",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=5be1c2e8f50c55f13a8d2513aa3846e38d883d7f",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.16.0",
+      "release_date": "September 7, 2023",
+      "size": "219.21 MB",
+      "architecture": ["armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "801bf47d3820ba6a0bb6ae65bc6890e665351ffd",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=801bf47d3820ba6a0bb6ae65bc6890e665351ffd",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.15.7",
+      "release_date": "August 18, 2023",
+      "size": "184.25 MB",
+      "architecture": ["arm64-v8a", "armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "c72e27905e7fb5b890e6d33a6893c75da22546cf",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=c72e27905e7fb5b890e6d33a6893c75da22546cf",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.15.7",
+      "release_date": "August 25, 2023",
+      "size": "241.48 MB",
+      "architecture": ["arm64-v8a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "14460b33f001dca96afb8469206040ebe153bdbb",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=14460b33f001dca96afb8469206040ebe153bdbb",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.15.5",
+      "release_date": "August 15, 2023",
+      "size": "184.24 MB",
+      "architecture": ["arm64-v8a", "armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "4ee1ee6457efa78311a8e13aa1ba4c4a0dfeac12",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=4ee1ee6457efa78311a8e13aa1ba4c4a0dfeac12",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.13.0",
+      "release_date": "May 26, 2023",
+      "size": "187.26 MB",
+      "architecture": ["arm64-v8a", "armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "5a05cc8d620acfc2e017d04ab107cc6590a01a29",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=5a05cc8d620acfc2e017d04ab107cc6590a01a29",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.12.0",
+      "release_date": "April 25, 2023",
+      "size": "182.95 MB",
+      "architecture": ["arm64-v8a", "armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "af7acebd389e1fbff5bff053b8fe34cbef68f8cb",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=af7acebd389e1fbff5bff053b8fe34cbef68f8cb",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.10.0",
+      "release_date": "March 4, 2023",
+      "size": "198.99 MB",
+      "architecture": ["arm64-v8a", "armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "2fdea458774e94f815731032a2e19872165aa644",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=2fdea458774e94f815731032a2e19872165aa644",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.8.0",
+      "release_date": "December 25, 2022",
+      "size": "200.69 MB",
+      "architecture": ["arm64-v8a", "armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "3bb66b3ee12b53f8ba3e6f8b63ba4c26808645d1",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=3bb66b3ee12b53f8ba3e6f8b63ba4c26808645d1",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.4.0",
+      "release_date": "October 22, 2022",
+      "size": "96.7 MB",
+      "architecture": ["arm64-v8a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "9e51491ec5b3710b5c3b5a8f2e88883ca2a247b7",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=9e51491ec5b3710b5c3b5a8f2e88883ca2a247b7",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.4.0",
+      "release_date": "November 4, 2022",
+      "size": "93.56 MB",
+      "architecture": ["armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "78753c913b49d3fbedf07e99f30e22a176b528fe",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=78753c913b49d3fbedf07e99f30e22a176b528fe",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.4.0",
+      "release_date": "December 25, 2022",
+      "size": "93.56 MB",
+      "architecture": ["armeabi-v7a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "eef2df102fe174c3178274218c1a4709efe5c7a7",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=eef2df102fe174c3178274218c1a4709efe5c7a7",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.2.4",
+      "release_date": "August 15, 2022",
+      "size": "91.91 MB",
+      "architecture": ["arm64-v8a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "2e28d46fa6665f5940c7cc50640dafb3b969a4d7",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=2e28d46fa6665f5940c7cc50640dafb3b969a4d7",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.2.3",
+      "release_date": "July 20, 2022",
+      "size": "91.92 MB",
+      "architecture": ["arm64-v8a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "6df3f7e3a3674e2064483d4452f26a2c28c6853f",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=6df3f7e3a3674e2064483d4452f26a2c28c6853f",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "5.0.4",
+      "release_date": "June 3, 2022",
+      "size": "89.83 MB",
+      "architecture": ["arm64-v8a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "dd4d5eee91913fa7f9cad9d14588a19e9b0ecd05",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=dd4d5eee91913fa7f9cad9d14588a19e9b0ecd05",
+      "whats_new": [
+        "New Homepage for you",
+        "Upgraded sound quality in Chat Room",
+        "Talent Ranking"
+      ]
+    },
+    {
+      "version": "4.13.0",
+      "release_date": "March 25, 2022",
+      "size": "83.87 MB",
+      "architecture": ["arm64-v8a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "05894184a42a176e56cda65f73c0035f0ae7821d",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=05894184a42a176e56cda65f73c0035f0ae7821d",
+      "whats_new": [
+        "The newest gang-up hall, where you can not only initiate a team with the player you want, but also speak out your team-up demands for matching perfect teammates"
+      ]
+    },
+    {
+      "version": "1.1.14",
+      "release_date": "May 23, 2021",
+      "size": "64.6 MB",
+      "architecture": ["arm64-v8a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "f1fc1a63dfd3455395a167c3160a9f992ed29f58",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=f1fc1a63dfd3455395a167c3160a9f992ed29f58",
+      "whats_new": ["Watch live streams in Hey Live"]
+    },
+    {
+      "version": "1.1.12",
+      "release_date": "May 2, 2021",
+      "size": "64.65 MB",
+      "architecture": ["arm64-v8a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "072476237b8768e9325429c47e71211dae27fea2",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=072476237b8768e9325429c47e71211dae27fea2",
+      "whats_new": ["Watch live streams in Hey Live"]
+    },
+    {
+      "version": "1.1.3",
+      "release_date": "March 31, 2021",
+      "size": "59 MB",
+      "architecture": ["arm64-v8a"],
+      "screen_dpi": "160-640dpi",
+      "sha1": "6808a1de136ff54cebc39e3fbf550cf8eebad4d3",
+      "download_link": "https://apkfab.com/bolohi/com.live.hey/download?sha1=6808a1de136ff54cebc39e3fbf550cf8eebad4d3",
+      "whats_new": ["Watch live streams in Hey Live"]
+    }
+  ]
+}
