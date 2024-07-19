@@ -11,12 +11,9 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "chrome-aws-lambda": "^10.1.0",
     "dotenv": "^16.4.5",
     "flowbite-react": "^0.8.0",
-    "googleapis": "^140.0.1",
     "next": "14.1.3",
-    "puppeteer": "^22.13.1",
     "puppeteer-core": "^22.13.1",
     "react": "^18",
     "react-dom": "^18"
