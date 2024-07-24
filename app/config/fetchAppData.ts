@@ -3,7 +3,7 @@ import { AppData } from "../types/type";
 
 export const fetchAppData = async (): Promise<AppData> => {
   // Use relative URL, Vercel handles serving public assets
-  const url = "http://localhost:3000/bolohi2.json";
+  const url = "https://bolohi.vercel.app/bolohi2.json";
   console.log("Attempting to fetch data from:", url);
 
   try {
