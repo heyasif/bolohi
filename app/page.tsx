@@ -11,6 +11,9 @@ import FAQComponent from "./component/FAQComponent";
 import { homePageContent } from "./data/contentData";
 import DownloadInstructions from "./component/DownloadInstructions";
 
+interface DownloadInstructionsProps {
+  steps: string[];
+}
 export default function Home() {
   console.log(homePageContent);
   return (
