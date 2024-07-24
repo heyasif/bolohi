@@ -2,6 +2,8 @@
 import Head from "next/head";
 import "./globals.css";
 import { fetchAppData } from "./config/fetchAppData";
+import { FooterCmp } from "./component/footer";
+import { Nav } from "./component/nav";
 // Server Component in the App Router (app/layout.tsx)
 export default async function RootLayout({
   children,
@@ -73,7 +75,11 @@ export default async function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdData) }}
         />
       </head>
-      <body className="your-class-name">{children}</body>
+      <body className="your-class-name">
+        <Nav />
+        {children}
+      </body>
+      <FooterCmp /> {/* Include the footer */}
     </html>
   );
 }
