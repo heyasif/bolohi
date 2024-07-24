@@ -29,6 +29,7 @@ export default function Home() {
 
         <DownloadInstructions
           steps={homePageContent.downloadInstructions.steps}
+          imagePath={"/source.webp"}
         />
         <div className="mt-10">
           {homePageContent.appDetails.map((detail, index) => (

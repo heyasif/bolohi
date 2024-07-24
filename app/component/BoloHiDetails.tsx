@@ -124,7 +124,7 @@ const BoloHiDetails = () => {
       </div>
 
       <div className="mt-8 text-center">
-        <Link href="/bolohi/allversion" passHref>
+        <Link href="/bolohi/all" passHref>
           <Button color="primary">View All</Button>
         </Link>
       </div>

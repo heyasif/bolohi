@@ -78,8 +78,8 @@ export default async function RootLayout({
       <body className="your-class-name">
         <Nav />
         {children}
+        <FooterCmp /> {/* Include the footer */}
       </body>
-      <FooterCmp /> {/* Include the footer */}
     </html>
   );
 }
