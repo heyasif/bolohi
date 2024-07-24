@@ -53,6 +53,8 @@ export default async function RootLayout({
     <html lang="en">
       <head>
         <title>{metadata.title}</title>
+        <link rel="icon" href="/fav.jpg" />
+
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
 

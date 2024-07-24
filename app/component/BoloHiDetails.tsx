@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Card, Badge, Button } from "flowbite-react";
+import { Spinner } from "flowbite-react";
 
 interface Version {
   version: string;
@@ -41,32 +42,24 @@ const BoloHiDetails = () => {
       .then((data) => setData(data));
   }, []);
 
-  if (!data) return <p>Loading...</p>;
+  if (!data)
+    return (
+      <div className="flex items-center justify-center p-4">
+        <Spinner
+          className="mx-auto"
+          aria-label="Extra large spinner example"
+          size="xl"
+        />
+      </div>
+    );
 
   return (
     <div className="container mx-auto p-4">
-      {/* <div className="mb-8 flex items-center space-x-4">
-        <Image
-          src={data.common_details.icon_url}
-          alt={data.app_name}
-          width={96}
-          height={96}
-          className="rounded-full"
-        />
-        <div>
-          <h2 className="text-2xl font-bold">
-            {data.app_name} for {data.platform}
-          </h2>
-          <p className="text-gray-600">Developed by {data.developer}</p>
-          <p className="text-gray-800">{data.common_details.description} s</p>
-        </div>
-      </div> */}
-
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
         {data.versions.slice(0, 3).map((version, index) => (
           <div
             key={index}
-            className="max-w-sm rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800"
+            className="mx-auto max-w-sm rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800"
           >
             <a href={version.download_link} target="_blank">
               <Image
@@ -123,7 +116,7 @@ const BoloHiDetails = () => {
         ))}
       </div>
 
-      <div className="mt-8 text-center">
+      <div className="align-center mt-8 flex justify-center">
         <Link href="/bolohi/all" passHref>
           <Button color="primary">View All</Button>
         </Link>

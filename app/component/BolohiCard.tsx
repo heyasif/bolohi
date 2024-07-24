@@ -25,7 +25,7 @@ const VersionCard: React.FC<VersionCardProps> = ({
   icon_url,
 }) => {
   return (
-    <Card className="my-4 flex flex-col md:flex-row">
+    <Card className="my-4 flex flex-col justify-between md:flex-row">
       <Image
         src={icon_url}
         alt={`Icon for version ${version}`}
