@@ -5,14 +5,24 @@ import {
   NavbarCollapse,
   NavbarToggle,
 } from "flowbite-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export function Nav() {
   return (
     <Navbar fluid rounded className="drop-shadow-md">
       <NavbarBrand href="/">
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-          BOLOHI
+        <span className="flex items-center gap-2 self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+          <Image
+            src="/fav.jpg"
+            alt="Logo"
+            width={50}
+            height={50}
+            className="rounded-full"
+          />
+          <span className="text-primary text-2xl font-bold tracking-wide dark:text-white">
+            BOLOHI
+          </span>
         </span>
       </NavbarBrand>
       <div className="flex md:order-2">
