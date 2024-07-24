@@ -1,28 +1,27 @@
-"use client";
+// components/DownloadInstructions.tsx
+import React from "react";
 
-import { Card } from "flowbite-react";
-import Image from "next/image";
-
-export function CardSee() {
-  return (
-    <Card
-      className="max-w-sm"
-      renderImage={() => (
-        <Image
-          width={500}
-          height={500}
-          src="/images/blog/image-1.jpg"
-          alt="image 1"
-        />
-      )}
-    >
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-        Noteworthy technology acquisitions 2021
-      </h5>
-      <p className="font-normal text-gray-700 dark:text-gray-400">
-        Here are the biggest enterprise technology acquisitions of 2021 so far,
-        in reverse chronological order.
-      </p>
-    </Card>
-  );
+interface DownloadInstructionsProps {
+  steps: string[];
 }
+
+const DownloadInstructions: React.FC<DownloadInstructionsProps> = ({
+  steps,
+}) => {
+  return (
+    <div className="mb-4 rounded-lg bg-white p-6 shadow">
+      <h2 className="mb-3 text-xl font-bold">
+        How to Download and Install the BoloHi Apk
+      </h2>
+      <ol className="list-inside list-decimal">
+        {steps.map((step, index) => (
+          <li key={index} className="my-2 text-gray-700">
+            {step}
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
+};
+
+export default DownloadInstructions;

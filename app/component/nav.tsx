@@ -16,7 +16,9 @@ export function Nav() {
         </span>
       </NavbarBrand>
       <div className="flex md:order-2">
-        <Button>Get started</Button>
+        <Link href="/bolohi/all" passHref legacyBehavior>
+          <Button>Download</Button>
+        </Link>
         <NavbarToggle />
       </div>
       <NavbarCollapse>
@@ -26,12 +28,12 @@ export function Nav() {
         <Link href="/bolohi/all" passHref legacyBehavior>
           <a className="navbar-link">All Version</a>
         </Link>
-        <Link href="#" passHref legacyBehavior>
+        {/* <Link href="#" passHref legacyBehavior>
           <a className="navbar-link">Services</a>
         </Link>
         <Link href="#" passHref legacyBehavior>
           <a className="navbar-link">Pricing</a>
-        </Link>
+        </Link> */}
         <Link href="#" passHref legacyBehavior>
           <a className="navbar-link">Contact</a>
         </Link>
