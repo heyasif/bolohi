@@ -91,47 +91,47 @@ export default function VersionDetail({
         <meta name="author" content="BoloHi Team" />
       </Head>
 
-      <div className="container mx-auto space-y-6 p-6">
-        <Card className="rounded-lg p-8 shadow-lg">
-          <div className="mb-4 flex flex-col items-center md:flex-row md:space-x-6">
+      <div className="container mx-auto space-y-6 p-4 sm:p-6">
+        <Card className="rounded-lg p-4 shadow-lg sm:p-8">
+          <div className="mb-4 flex flex-col items-center sm:flex-row sm:items-start sm:space-x-6">
             <Image
               src={data.common_details.icon_url}
               alt="App Icon"
-              width={130}
-              height={130}
-              className="mb-4 md:mb-0"
+              width={100}
+              height={100}
+              className="mb-4 sm:mb-0"
             />
-            <div>
-              <h3 className="text-2xl font-bold">
+            <div className="text-center sm:text-left">
+              <h3 className="text-lg font-bold sm:text-2xl">
                 BoloHi Version {versionData.version}
               </h3>
-              <p className="text-sm text-gray-600">
+              <p className="text-xs text-gray-600 sm:text-sm">
                 <strong>Last Update:</strong> {versionData.release_date}
               </p>
-              <p className="text-sm text-gray-600">
+              <p className="text-xs text-gray-600 sm:text-sm">
                 <strong>Size:</strong> {versionData.size}
               </p>
-              <p className="text-sm text-gray-600">
+              <p className="text-xs text-gray-600 sm:text-sm">
                 <strong>Architecture:</strong>{" "}
                 {versionData.architecture.join(", ")}
               </p>
-              <p className="text-sm text-gray-600">
+              <p className="text-xs text-gray-600 sm:text-sm">
                 <strong>Screen DPI:</strong> {versionData.screen_dpi}
               </p>
-              <p className="text-sm text-gray-600">
+              <p className="break-words text-xs text-gray-600 sm:text-sm">
                 <strong>SHA1:</strong> {versionData.sha1}
               </p>
             </div>
           </div>
           <Button
             onClick={handleDownloadClick}
-            className="mt-6 rounded bg-blue-600 px-4 py-2 font-bold text-white hover:bg-blue-700"
+            className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-bold text-white hover:bg-blue-700"
           >
             {countdown === null ? "Download" : `Redirecting in ${countdown}s`}
           </Button>
         </Card>
 
-        <Card className="rounded-lg p-8 shadow-lg">
+        <Card className="rounded-lg p-4 shadow-lg sm:p-8">
           <div className="my-4">
             <h4 className="mb-2 font-semibold">What's New:</h4>
             <ul className="ml-4 list-inside list-disc text-gray-700">
@@ -142,14 +142,14 @@ export default function VersionDetail({
           </div>
         </Card>
 
-        <Card className="rounded-lg p-8 shadow-lg">
+        <Card className="rounded-lg p-4 shadow-lg sm:p-8">
           <div className="my-4">
             <h4 className="mb-2 font-semibold">Description:</h4>
             <p className="text-gray-700">{data.common_details.description}</p>
           </div>
         </Card>
 
-        <Card className="rounded-lg p-8 shadow-lg">
+        <Card className="rounded-lg p-4 shadow-lg sm:p-8">
           <div className="my-4">
             <h4 className="mb-2 font-semibold">Features:</h4>
             <ul className="ml-4 list-inside list-disc text-gray-700">
@@ -160,7 +160,7 @@ export default function VersionDetail({
           </div>
         </Card>
 
-        <Card className="rounded-lg p-8 shadow-lg">
+        <Card className="rounded-lg p-4 shadow-lg sm:p-8">
           <div className="my-4">
             <h4 className="mb-2 font-semibold">Pros:</h4>
             <ul className="ml-4 list-inside list-disc text-gray-700">
@@ -171,7 +171,7 @@ export default function VersionDetail({
           </div>
         </Card>
 
-        <Card className="rounded-lg p-8 shadow-lg">
+        <Card className="rounded-lg p-4 shadow-lg sm:p-8">
           <div className="my-4">
             <h4 className="mb-2 font-semibold">Cons:</h4>
             <ul className="ml-4 list-inside list-disc text-gray-700">
@@ -182,7 +182,7 @@ export default function VersionDetail({
           </div>
         </Card>
 
-        <Card className="rounded-lg p-8 shadow-lg">
+        <Card className="rounded-lg p-4 shadow-lg sm:p-8">
           <div className="my-6 flex flex-wrap gap-4">
             {data.common_details.screenshots.map((screenshot, index) => (
               <Image

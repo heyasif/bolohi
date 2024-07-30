@@ -43,7 +43,7 @@ const VersionCard: React.FC<VersionCardProps> = ({
           Architecture: {architecture.join(", ")}
         </p>
         <p className="text-sm text-gray-700">Screen DPI: {screen_dpi}</p>
-        <p className="text-sm text-gray-700">SHA1: {sha1}</p>
+        <p className="truncate text-sm text-gray-700">SHA1: {sha1}</p>
         {/* <div className="my-2 flex flex-wrap gap-2">
           <p className="font-semibold">What's New:</p>
           {whats_new.map((update, index) => (

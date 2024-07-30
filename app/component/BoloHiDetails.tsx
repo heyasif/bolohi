@@ -2,8 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Card, Badge, Button } from "flowbite-react";
-import { Spinner } from "flowbite-react";
+import { Card, Badge, Button, Spinner } from "flowbite-react";
 
 interface Version {
   version: string;
@@ -45,78 +44,53 @@ const BoloHiDetails = () => {
   if (!data)
     return (
       <div className="flex items-center justify-center p-4">
-        <Spinner
-          className="mx-auto"
-          aria-label="Extra large spinner example"
-          size="xl"
-        />
+        <Spinner aria-label="Extra large spinner example" size="xl" />
       </div>
     );
 
   return (
-    <div className="container mx-auto p-4">
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
+    <div className="  container mx-auto mt-12">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {data.versions.slice(0, 3).map((version, index) => (
-          <div
+          <Card
             key={index}
-            className="mx-auto max-w-sm rounded-lg border border-gray-200 bg-white shadow dark:border-gray-700 dark:bg-gray-800"
+            className="mx-auto flex max-w-sm flex-col items-center p-5"
           >
-            <a href={version.download_link} target="_blank">
+            <a href={`/download/${version.version}`} rel="noopener noreferrer">
               <Image
                 src={data.common_details.icon_url}
                 alt={data.app_name}
                 width={96}
                 height={96}
-                className="mx-auto mt-4 rounded-t-lg"
+                className="rounded-full"
               />
             </a>
-            <div className="p-5">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Version {version.version}
-              </h5>
-              <Badge color="info" className="mb-2">
-                Last Update: {version.release_date}
-              </Badge>
-              <p className="mb-1 text-sm">
-                <strong>Size:</strong> {version.size}
-              </p>
-              <p className="mb-1 text-sm">
-                <strong>Architecture:</strong> {version.architecture.join(", ")}
-              </p>
-              <p className="mb-1 text-sm">
-                <strong>Screen DPI:</strong> {version.screen_dpi}
-              </p>
-              <p className="mb-1 text-sm">
-                <strong>SHA1:</strong> {version.sha1}
-              </p>
-              <a
-                href={version.download_link}
-                target="_blank"
-                className="mt-4 inline-flex items-center rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                Download
-                <svg
-                  className="ms-2 size-3.5 rtl:rotate-180"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
+            <h5 className=" text-lg font-bold text-gray-900 dark:text-white sm:text-xl">
+              Version {version.version}
+            </h5>
+            <Badge color="info">Last Update: {version.release_date}</Badge>
+            <p className="text-sm text-gray-600">Size: {version.size}</p>
+            <p className=" text-sm text-gray-600">
+              Architecture: {version.architecture.join(", ")}
+            </p>
+            <p className=" text-sm text-gray-600">
+              Screen DPI: {version.screen_dpi}
+            </p>
+            <p className=" break-all text-sm text-gray-600">
+              SHA1: {version.sha1}
+            </p>
+            <Button
+              href={`/download/${version.version}`}
+              color="blue"
+              pill
+              className="mt-4"
+            >
+              Download
+            </Button>
+          </Card>
         ))}
       </div>
-
-      <div className="align-center mt-8 flex justify-center">
+      <div className="mt-8 flex justify-center">
         <Link href="/bolohi/all" passHref>
           <Button color="primary">View All</Button>
         </Link>
