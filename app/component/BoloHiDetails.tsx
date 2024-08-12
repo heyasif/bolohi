@@ -56,15 +56,14 @@ const BoloHiDetails = () => {
             key={index}
             className="mx-auto flex max-w-sm flex-col items-center p-5"
           >
-            <a href={`/download/${version.version}`} rel="noopener noreferrer">
-              <Image
-                src={data.common_details.icon_url}
-                alt={data.app_name}
-                width={96}
-                height={96}
-                className="rounded-full"
-              />
-            </a>
+            <Image
+              src={data.common_details.icon_url}
+              alt={data.app_name}
+              width={96}
+              height={96}
+              className="rounded-full"
+            />
+
             <h5 className=" text-lg font-bold text-gray-900 dark:text-white sm:text-xl">
               Version {version.version}
             </h5>
@@ -79,14 +78,12 @@ const BoloHiDetails = () => {
             <p className=" break-all text-sm text-gray-600">
               SHA1: {version.sha1}
             </p>
-            <Button
-              href={`/download/${version.version}`}
-              color="blue"
-              pill
-              className="mt-4"
-            >
-              Download
-            </Button>
+
+            <Link href={`/download/${version.version}`} passHref>
+              <Button color="blue" pill className="w-full">
+                Download
+              </Button>
+            </Link>
           </Card>
         ))}
       </div>
