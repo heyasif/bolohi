@@ -61,5 +61,5 @@ export async function handler(req: NextRequest) {
   }
 }
 
-// Export the handler as the default export
+// Export the handler as the default exports
 export { handler as POST, handler as GET, handler as PUT, handler as DELETE };
