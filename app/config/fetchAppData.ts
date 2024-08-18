@@ -13,7 +13,7 @@ export const fetchAppData = async (): Promise<AppData> => {
       throw new Error("Failed to fetch data");
     }
     const data: AppData = await response.json();
-    console.log("Data fetched successfully:", data);
+    // console.log("Data fetched successfully:", data);
     return data;
   } catch (error) {
     if (error instanceof Error) {

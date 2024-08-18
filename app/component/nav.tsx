@@ -44,7 +44,7 @@ export function Nav() {
         <Link href="#" passHref legacyBehavior>
           <a className="navbar-link">Pricing</a>
         </Link> */}
-        <Link href="#" passHref legacyBehavior>
+        <Link href="/contact" passHref legacyBehavior>
           <a className="navbar-link">Contact</a>
         </Link>
       </NavbarCollapse>

@@ -1,4 +1,7 @@
-import { Card, Badge, Button } from "flowbite-react";
+"use client";
+
+import { useState, useEffect } from "react";
+import { Card, Button } from "flowbite-react";
 import Image from "next/image";
 
 interface Version {
@@ -29,21 +32,35 @@ interface AppData {
   versions: Version[];
 }
 
-const VersionDetailClient = ({
-  data,
-  version,
+export default function VersionDetail({
+  appData,
+  versionData,
 }: {
-  data: AppData;
-  version: Version;
-}) => {
-  if (!version) return <p>Loading...</p>;
+  appData: AppData;
+  versionData: Version;
+}) {
+  const [countdown, setCountdown] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (countdown === 0) {
+      window.location.href = versionData!.download_link;
+    }
+    if (countdown !== null && countdown > 0) {
+      const timer = setTimeout(() => setCountdown(countdown - 1), 1000);
+      return () => clearTimeout(timer);
+    }
+  }, [countdown, versionData]);
+
+  const handleDownloadClick = () => {
+    setCountdown(20);
+  };
 
   return (
     <div className="container mx-auto space-y-6 p-4 sm:p-6">
       <Card className="rounded-lg p-4 shadow-lg sm:p-8">
         <div className="mb-4 flex flex-col items-center sm:flex-row sm:items-start sm:space-x-6">
           <Image
-            src={data.common_details.icon_url}
+            src={appData.common_details.icon_url}
             alt="App Icon"
             width={100}
             height={100}
@@ -51,31 +68,31 @@ const VersionDetailClient = ({
           />
           <div className="text-center sm:text-left">
             <h3 className="text-lg font-bold sm:text-2xl">
-              BoloHi Version {version.version}
+              BoloHi Version {versionData.version}
             </h3>
             <p className="text-xs text-gray-600 sm:text-sm">
-              <strong>Last Update:</strong> {version.release_date}
+              <strong>Last Update:</strong> {versionData.release_date}
             </p>
             <p className="text-xs text-gray-600 sm:text-sm">
-              <strong>Size:</strong> {version.size}
+              <strong>Size:</strong> {versionData.size}
             </p>
             <p className="text-xs text-gray-600 sm:text-sm">
-              <strong>Architecture:</strong> {version.architecture.join(", ")}
+              <strong>Architecture:</strong>{" "}
+              {versionData.architecture.join(", ")}
             </p>
             <p className="text-xs text-gray-600 sm:text-sm">
-              <strong>Screen DPI:</strong> {version.screen_dpi}
+              <strong>Screen DPI:</strong> {versionData.screen_dpi}
             </p>
             <p className="break-words text-xs text-gray-600 sm:text-sm">
-              <strong>SHA1:</strong> {version.sha1}
+              <strong>SHA1:</strong> {versionData.sha1}
             </p>
           </div>
         </div>
         <Button
-          href={version.download_link}
-          target="_blank"
+          onClick={handleDownloadClick}
           className="mt-4 rounded bg-blue-600 px-4 py-2 text-sm font-bold text-white hover:bg-blue-700"
         >
-          Download
+          {countdown === null ? "Download" : `Redirecting in ${countdown}s`}
         </Button>
       </Card>
 
@@ -83,7 +100,7 @@ const VersionDetailClient = ({
         <div className="my-4">
           <h4 className="mb-2 font-semibold">What's New:</h4>
           <ul className="ml-4 list-inside list-disc text-gray-700">
-            {version.whats_new.map((update, index) => (
+            {versionData.whats_new.map((update, index) => (
               <li key={index}>{update}</li>
             ))}
           </ul>
@@ -93,7 +110,7 @@ const VersionDetailClient = ({
       <Card className="rounded-lg p-4 shadow-lg sm:p-8">
         <div className="my-4">
           <h4 className="mb-2 font-semibold">Description:</h4>
-          <p className="text-gray-700">{data.common_details.description}</p>
+          <p className="text-gray-700">{appData.common_details.description}</p>
         </div>
       </Card>
 
@@ -101,7 +118,7 @@ const VersionDetailClient = ({
         <div className="my-4">
           <h4 className="mb-2 font-semibold">Features:</h4>
           <ul className="ml-4 list-inside list-disc text-gray-700">
-            {data.common_details.features.map((feature, index) => (
+            {appData.common_details.features.map((feature, index) => (
               <li key={index}>{feature}</li>
             ))}
           </ul>
@@ -112,7 +129,7 @@ const VersionDetailClient = ({
         <div className="my-4">
           <h4 className="mb-2 font-semibold">Pros:</h4>
           <ul className="ml-4 list-inside list-disc text-gray-700">
-            {data.common_details.pros.map((pro, index) => (
+            {appData.common_details.pros.map((pro, index) => (
               <li key={index}>{pro}</li>
             ))}
           </ul>
@@ -123,7 +140,7 @@ const VersionDetailClient = ({
         <div className="my-4">
           <h4 className="mb-2 font-semibold">Cons:</h4>
           <ul className="ml-4 list-inside list-disc text-gray-700">
-            {data.common_details.cons.map((con, index) => (
+            {appData.common_details.cons.map((con, index) => (
               <li key={index}>{con}</li>
             ))}
           </ul>
@@ -132,7 +149,7 @@ const VersionDetailClient = ({
 
       <Card className="rounded-lg p-4 shadow-lg sm:p-8">
         <div className="my-6 flex flex-wrap gap-4">
-          {data.common_details.screenshots.map((screenshot, index) => (
+          {appData.common_details.screenshots.map((screenshot, index) => (
             <Image
               key={index}
               src={screenshot}
@@ -146,6 +163,4 @@ const VersionDetailClient = ({
       </Card>
     </div>
   );
-};
-
-export default VersionDetailClient;
+}
