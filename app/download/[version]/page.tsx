@@ -30,13 +30,6 @@ export async function generateMetadata({
         },
       ],
     },
-    twitter: {
-      card: "summary_large_image",
-      site: "@yourTwitterHandle",
-      title: `Download BoloHi Version ${versionData.version}`,
-      description: `Download BoloHi Version ${versionData.version}, updated on ${versionData.release_date}.`,
-      image: appData.common_details.icon_url,
-    },
   };
 }
 
