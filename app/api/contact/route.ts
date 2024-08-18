@@ -8,58 +8,58 @@ interface ContactFormData {
   message: string;
 }
 
-// Define the handler for the route
-export async function handler(req: NextRequest) {
-  if (req.method === "POST") {
-    const body: ContactFormData = await req.json();
+// Define the POST handler
+export async function POST(req: NextRequest) {
+  const body: ContactFormData = await req.json();
 
-    const { name, email, subject, message } = body;
+  const { name, email, subject, message } = body;
 
-    // Log environment variables for debugging purposes (remove in production)
-    console.log("EMAIL_USER:", process.env.EMAIL_USER);
-    console.log(
-      "EMAIL_PASS:",
-      process.env.EMAIL_PASS ? "Loaded" : "Not Loaded",
-    );
+  // Log environment variables for debugging purposes (remove in production)
+  console.log("EMAIL_USER:", process.env.EMAIL_USER);
+  console.log("EMAIL_PASS:", process.env.EMAIL_PASS ? "Loaded" : "Not Loaded");
 
-    // Set up the Nodemailer transport using the Gmail App Password
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.EMAIL_USER, // Your Gmail address from environment variables
-        pass: process.env.EMAIL_PASS, // Your Gmail App Password from environment variables
-      },
-    });
+  // Set up the Nodemailer transport using the Gmail App Password
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.EMAIL_USER, // Your Gmail address from environment variables
+      pass: process.env.EMAIL_PASS, // Your Gmail App Password from environment variables
+    },
+  });
 
-    const mailOptions = {
-      from: process.env.EMAIL_USER, // Your Gmail address
-      to: "hellomohdasif@gmail.com", // The email address to receive the contact form submission
-      replyTo: email, // Set the reply-to address to the user's email
-      subject: `New Contact Form Submission: ${subject}`,
-      text: `You have received a new message from ${name} (${email}):\n\n${message}`,
-    };
+  const mailOptions = {
+    from: process.env.EMAIL_USER, // Your Gmail address
+    to: "hellomohdasif@gmail.com", // The email address to receive the contact form submission
+    replyTo: email, // Set the reply-to address to the user's email
+    subject: `New Contact Form Submission: ${subject}`,
+    text: `You have received a new message from ${name} (${email}):\n\n${message}`,
+  };
 
-    try {
-      // Send the email
-      await transporter.sendMail(mailOptions);
-      return NextResponse.json(
-        { message: "Message sent successfully" },
-        { status: 200 },
-      );
-    } catch (error) {
-      console.error("Error sending email:", error);
-      return NextResponse.json(
-        { message: "Failed to send message" },
-        { status: 500 },
-      );
-    }
-  } else {
+  try {
+    // Send the email
+    await transporter.sendMail(mailOptions);
     return NextResponse.json(
-      { message: "Method not allowed" },
-      { status: 405 },
+      { message: "Message sent successfully" },
+      { status: 200 },
+    );
+  } catch (error) {
+    console.error("Error sending email:", error);
+    return NextResponse.json(
+      { message: "Failed to send message" },
+      { status: 500 },
     );
   }
 }
 
-// Export the handler as the default exports
-export { handler as POST, handler as GET, handler as PUT, handler as DELETE };
+// Handle other HTTP methods
+export async function GET(req: NextRequest) {
+  return NextResponse.json({ message: "Method not allowed" }, { status: 405 });
+}
+
+export async function PUT(req: NextRequest) {
+  return NextResponse.json({ message: "Method not allowed" }, { status: 405 });
+}
+
+export async function DELETE(req: NextRequest) {
+  return NextResponse.json({ message: "Method not allowed" }, { status: 405 });
+}
